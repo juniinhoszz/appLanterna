@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="appLanterna.MainPage">
+
+    <StackLayout BackgroundColor="#e7e8ea">
+
+        <Label Text=""/>
+        <Label Text="LANTERNA" TextColor="Black" HorizontalTextAlignment="Center" FontSize="55"/>
+        
+       
+        
+        <ImageButton x:Name="botao"
+                     HeightRequest="200"
+                     Source=""
+                     Clicked="botao_Clicked"
+                     BackgroundColor="#e7e8ea"/>
+
+        <Label Text="" />
+
+        <Label Text="SITUAÇÃO DA BATERIA" TextColor="Black" HorizontalTextAlignment="Center" FontSize="35"/>
+        
+        <Label Text="" />
+        
+        
+        
+
+        <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="*,*,*,*,*">
+
+            <Label Grid.Column="0" Grid.Row="0" Grid.RowSpan="1" HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" Text="Carga restante:" TextColor="#484D50" FontSize="30" />
+
+            <Label Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" Text="Status da Bateria:" TextColor="#484D50" FontSize="30" />
+
+            <Label Grid.Column="0" Grid.Row="2" Grid.RowSpan="3" HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" Text="Fonte de Energia:" TextColor="#484D50" FontSize="30" />
+
+
+            <Label Grid.Column="1" Grid.Row="0" Grid.RowSpan="1" HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" Text="100%" TextColor="#484D50" FontSize="30" />
+
+            <Label Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" Text="Carregando" TextColor="#484D50" FontSize="30" />
+
+            <Label Grid.Column="1" Grid.Row="2" Grid.RowSpan="3" HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" Text="Carregador" TextColor="#484D50" FontSize="30" />
+
+
+        </Grid>
+        
+    </StackLayout>
+
+</ContentPage>
