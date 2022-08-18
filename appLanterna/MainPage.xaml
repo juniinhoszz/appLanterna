@@ -6,50 +6,61 @@
     <StackLayout BackgroundColor="#e7e8ea">
 
         <Label Text=""/>
+
         <Label Text="LANTERNA" TextColor="Black" HorizontalTextAlignment="Center" FontSize="55"/>
-        
-       
-        
+        <Label Text=""/>
+
+
+
         <ImageButton x:Name="botao"
-                     HeightRequest="200"
+                     HeightRequest="250"
                      Source=""
                      Clicked="botao_Clicked"
                      BackgroundColor="#e7e8ea"/>
 
-        <Label Text="" />
+
+        <Label Text=""/>
+        <Label Text=""/>
+
+
+
+
 
         <Label Text="SITUAÇÃO DA BATERIA" TextColor="Black" HorizontalTextAlignment="Center" FontSize="35"/>
-        
-        <Label Text="" />
-        
-        
-        
+
+
+
+
+
 
         <Grid ColumnDefinitions="*,*"
-                  RowDefinitions="*,*,*,*,*">
+                  RowDefinitions="*,*,*">
 
             <Label Grid.Column="0" Grid.Row="0" Grid.RowSpan="1" HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center" Text="Carga restante:" TextColor="#484D50" FontSize="30" />
+                   VerticalTextAlignment="Center" Text=" Carga restante:" TextColor="#484D50" FontSize="25" />
 
             <Label Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center" Text="Status da Bateria:" TextColor="#484D50" FontSize="30" />
+                   VerticalTextAlignment="Center" Text=" Status da Bateria:" TextColor="#484D50" FontSize="25" />
 
-            <Label Grid.Column="0" Grid.Row="2" Grid.RowSpan="3" HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center" Text="Fonte de Energia:" TextColor="#484D50" FontSize="30" />
+            <Label Grid.Column="0" Grid.Row="2" Grid.RowSpan="4" HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" Text=" Fonte de Energia:" TextColor="#484D50" FontSize="25" />
 
 
-            <Label Grid.Column="1" Grid.Row="0" Grid.RowSpan="1" HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center" Text="100%" TextColor="#484D50" FontSize="30" />
+            <Label x:Name="lbl_porc_restante" Grid.Column="1" Grid.Row="0" Grid.RowSpan="1" HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" Text="100%" TextColor="#484D50" FontSize="25" />
 
-            <Label Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center" Text="Carregando" TextColor="#484D50" FontSize="30" />
+            <Label x:Name="lbl_status" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" Text="Carregando" TextColor="#484D50" FontSize="25" />
 
-            <Label Grid.Column="1" Grid.Row="2" Grid.RowSpan="3" HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center" Text="Carregador" TextColor="#484D50" FontSize="30" />
+            <Label x:Name="lbl_fonte_carregamento" Grid.Column="1" Grid.Row="2" Grid.RowSpan="4" HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" Text="Carregador" TextColor="#484D50" FontSize="25" />
+
+
+
 
 
         </Grid>
-        
+        <Label x:Name="lbl_bateria_fraca" Text="" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Red" FontSize="35"/>
     </StackLayout>
 
 </ContentPage>
